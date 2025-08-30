@@ -8,6 +8,8 @@ import PublicLayout from "./layouts/PublicLayout";
 import Home from "./components/Home";
 import PageNotFound from "./page/PageNotFound";
 import Services from "./page/Service";
+import UseEffect from './components/hooks/use-effect'
+import UseState from "./components/hooks/use-state";
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="service" element={<Services />} />
+           <Route path="use-effect" element={<UseEffect />} />
+           <Route path="use-state" element={<UseState />} />
            <Route  path='/*' Component={PageNotFound}/>
         </Route>
       </Routes>
