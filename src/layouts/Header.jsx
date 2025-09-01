@@ -65,6 +65,32 @@ const Header = () =>{
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                   Crud  Operation
+                </a>
+                <ul className="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <NavLink to="/crud" className="dropdown-item" >
+                      React Crud
+                    </NavLink>
+                  </li>
+                   <hr className="dropdown-divider" />
+                   <li>
+                    <NavLink to="/redux-crud" className="dropdown-item" >
+                      Redux Crud
+                    </NavLink>
+                  </li>
+                  
+                </ul>
+              </li>
+
+               <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle fw-semibold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Custome Hooks
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end">

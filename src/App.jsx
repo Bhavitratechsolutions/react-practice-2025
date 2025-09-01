@@ -10,6 +10,9 @@ import PageNotFound from "./page/PageNotFound";
 import Services from "./page/Service";
 import UseEffect from './components/hooks/use-effect'
 import UseState from "./components/hooks/use-state";
+import UseMemo from "./components/hooks/use-memo";
+import UseCallBack from "./components/hooks/use-callback";
+import Crud from "./components/crud";
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
           <Route path="service" element={<Services />} />
            <Route path="use-effect" element={<UseEffect />} />
            <Route path="use-state" element={<UseState />} />
+            <Route path="use-memo" element={<UseMemo />} />
+            <Route path="use-callback" element={<UseCallBack />} />
+             <Route path="crud" element={<Crud />} />
            <Route  path='/*' Component={PageNotFound}/>
         </Route>
       </Routes>
